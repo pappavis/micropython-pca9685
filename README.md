@@ -35,7 +35,7 @@ Let op!!  met __DC_MOTORS = [(14, 15)] stel jy jouw poorten in as array.
 
 
 # voorbeeld DCMotors
-Sien ook die examples/ map vir meer voorbeelde.
+Sien ook die <a href="https://github.com/pappavis/micropython-pca9685/tree/main/voorbeeld">examples/</a> map vir meer voorbeelde.
 
 # Credits
 Oorspronklike lib deur Adafruit.
