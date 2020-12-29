@@ -24,47 +24,17 @@ Type "help()" for more information.
 >>> from pca9685.pca9685 import PCA9685
 >>> i2c1 = machine.SoftI2C(scl=machine.Pin(22),sda=machine.Pin(21),freq=100000)
 >>> pca1 = PCA9685(i2c=i2c1, address=0x40)
->>> moto1.__DC_MOTORS = [(14, 15)]
+>>> moto1.__DC_MOTORS = [(14, 15), (8, 9)]
+>>> moto1.speed(index=0, value=1200)
+>>> moto1.speed(index=0, value=0)
 ```
 
 Let op!!  met __DC_MOTORS = [(14, 15)] stel jy jouw poorten in as array.
 
-Sien ook die examples/ map vir meer voorbeelde.
 
 # voorbeeld DCMotors
+Sien ook die examples/ map vir meer voorbeelde.
 
-```python
-import machine
-import sys
-import utime
-from pca9685.pca9685 import PCA9685
-from pca9685.motor import DCMotors
-
-def main():
-    i2c1 = ''
-    
-    if(sys.platform == 'esp8266'):
-        i2c1 = machine.I2C(scl=machine.Pin(5), sda=machine.Pin(4), freq=100000)
-    else:
-        i2c1 = machine.SoftI2C(scl=machine.Pin(22),sda=machine.Pin(21),freq=100000)
-
-    pca1 = PCA9685(i2c=i2c1, address=0x40)
-    moto1 = DCMotors(i2c=i2c1, address=0x40)
-    inA1 = 14
-    inA2 = 15
-    moto1.__DC_MOTORS = [(inA1, inA2)]
-    
-    moto1.speed(index=0, value=0)
-    print("motor afremmen")
-    utime.sleep_ms(1200)
-    
-    spoed1 = 1000    # speed from 0 to 4096
-    print("start motor, spoed=",spoed1)
-    moto1.speed(index=0, value=spoed1)
-    utime.sleep_ms(1200)
-
-print("app START op ", sys.platform)
-main()
-print("app EIND op ", sys.platform)
-
-```
+# Credits
+Oorpsornklike lib deur Adafruit.
+Aangepasd deur Michiel Erasmus.
