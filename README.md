@@ -18,7 +18,7 @@ macBook$ git pull github.com/pappavis/micropython-pca9685/
 6. Test jouw installasie<br>
 
 # Gebruik:
-
+Jy kan die Micropython REPL oopmaak en die volgende intik.
 ```bash
 MicroPython v1.13-178-g21c293fbc on 2020-11-16; ESP32 module with ESP32
 
