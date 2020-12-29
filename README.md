@@ -24,8 +24,11 @@ Type "help()" for more information.
 >>> from pca9685.pca9685 import PCA9685
 >>> i2c1 = machine.SoftI2C(scl=machine.Pin(22),sda=machine.Pin(21),freq=100000)
 >>> pca1 = PCA9685(i2c=i2c1, address=0x40)
->>> 
+>>> moto1.__DC_MOTORS = [(14, 15)]
 ```
+
+Let op!!  met __DC_MOTORS = [(14, 15)] stel jy jouw poorten in as array.
+
 Sien ook die examples/ map vir meer voorbeelde.
 
 # voorbeeld DCMotors
@@ -47,7 +50,9 @@ def main():
 
     pca1 = PCA9685(i2c=i2c1, address=0x40)
     moto1 = DCMotors(i2c=i2c1, address=0x40)
-    moto1.__DC_MOTORS = [(14, 15)]
+    inA1 = 14
+    inA2 = 15
+    moto1.__DC_MOTORS = [(inA1, inA2)]
     
     moto1.speed(index=0, value=0)
     print("motor afremmen")
