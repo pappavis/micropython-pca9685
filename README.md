@@ -55,4 +55,8 @@ def main():
     moto1.speed(index=0, value=spoed1)
     utime.sleep_ms(1200)
 
+print("app START op ", sys.platform)
+main()
+print("app EIND op ", sys.platform)
+
 ```
