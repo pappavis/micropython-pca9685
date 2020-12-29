@@ -43,7 +43,7 @@ def main():
     if(sys.platform == 'esp8266'):
         i2c1 = machine.I2C(scl=machine.Pin(5), sda=machine.Pin(4), freq=100000)
     else:
-        i2c1 = machine.SoftI2C(scl=machine.Pin(19),sda=machine.Pin(22),freq=100000)
+        i2c1 = machine.SoftI2C(scl=machine.Pin(22),sda=machine.Pin(21),freq=100000)
 
 
     moto1.speed(index=0, value=0)
