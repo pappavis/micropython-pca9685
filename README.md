@@ -1,6 +1,20 @@
 ### PCA9685 12-bit I2C PWM motor aansturing biblioteek.
 Oorspronklike deur <a href="https://github.com/adafruit/micropython-adafruit-pca9685" target="_blank">Adafruit</a>
 
+<img src="https://github.com/pappavis/micropython-pca9685/blob/main/plaatjes/pca9685_breakout.gif?raw=true" width="30%" height="30%">
+
+# Hoe om te gebruik:
+
+1. Download die micropython lib
+```bash
+macBook$ git pull github.com/pappavis/micropython-pca9685/
+```
+
+2. Verbind jouw Micropython apparaat aan jouw computer.
+3. Open <a href="https://thonny.org/">Thonny</a> en selecteer die juiste COM-poort (Windows) of /dev/ op Mac & Linux.
+4. Maak een root map "lib"
+
+
 # voorbeeld DCMotors
 
 ```python
