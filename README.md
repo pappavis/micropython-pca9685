@@ -1,9 +1,9 @@
-### PCA9685 12-bit I2C PWM motor aansturing biblioteek.
+Micropython PCA9685 12-bit I2C PWM motor aansturing biblioteek.
 Oorspronklike deur <a href="https://github.com/adafruit/micropython-adafruit-pca9685" target="_blank">Adafruit</a>
 
 <img src="https://github.com/pappavis/micropython-pca9685/blob/main/plaatjes/pca9685_breakout.gif?raw=true" width="30%" height="30%">
 
-# Hoe om te gebruik:
+# Installatie
 
 1. Download die micropython lib
 ```bash
@@ -17,6 +17,7 @@ macBook$ git pull github.com/pappavis/micropython-pca9685/
 5. Upload die lib naar /lib/pca9685 met 'n tool soos <a href="https://github.com/wendlers/mpfshell" target="_blank">mpfshell</a>.
 6. Test jouw installasie<br>
 
+# Gebruik:
 
 ```bash
 MicroPython v1.13-178-g21c293fbc on 2020-11-16; ESP32 module with ESP32
