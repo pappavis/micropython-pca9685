@@ -14,7 +14,7 @@ macBook$ git pull github.com/pappavis/micropython-pca9685/
 3. Open <a href="https://thonny.org/">Thonny</a> en selecteer die juiste COM-poort (Windows) of /dev/ op Mac & Linux.
 4. Maak een root map "lib"
  <img src="https://github.com/pappavis/micropython-pca9685/blob/main/plaatjes/thonny_pad.jpg?raw=true">
-5. Upload die lib naar /lib/pca9685 met 'n tool soos <a href="https://github.com/wendlers/mpfshell" target="_blank">mpfshell</a>
+5. Upload die lib naar /lib/pca9685 met 'n tool soos <a href="https://github.com/wendlers/mpfshell" target="_blank">mpfshell</a>.
 6. Test jouw installasie .
 
 ```bash
