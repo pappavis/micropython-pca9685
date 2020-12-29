@@ -13,7 +13,20 @@ macBook$ git pull github.com/pappavis/micropython-pca9685/
 2. Verbind jouw Micropython apparaat aan jouw computer.
 3. Open <a href="https://thonny.org/">Thonny</a> en selecteer die juiste COM-poort (Windows) of /dev/ op Mac & Linux.
 4. Maak een root map "lib"
+ <img src="https://github.com/pappavis/micropython-pca9685/blob/main/plaatjes/thonny_pad.jpg?raw=true">
+5. Upload die lib naar /lib/pca9685 met 'n tool soos <a href="https://github.com/wendlers/mpfshell" target="_blank">mpfshell</a>
+6. Test jouw installasie .
 
+```bash
+MicroPython v1.13-178-g21c293fbc on 2020-11-16; ESP32 module with ESP32
+
+Type "help()" for more information.
+>>> from pca9685.pca9685 import PCA9685
+>>> i2c1 = machine.SoftI2C(scl=machine.Pin(22),sda=machine.Pin(21),freq=100000)
+>>> pca1 = PCA9685(i2c=i2c1, address=0x40)
+>>> 
+```
+Sien ook die examples/ map vir meer voorbeelde.
 
 # voorbeeld DCMotors
 
