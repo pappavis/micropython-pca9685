@@ -45,7 +45,10 @@ def main():
     else:
         i2c1 = machine.SoftI2C(scl=machine.Pin(22),sda=machine.Pin(21),freq=100000)
 
-
+    pca1 = PCA9685(i2c=i2c1, address=0x40)
+    moto1 = DCMotors(i2c=i2c1, address=0x40)
+    moto1.__DC_MOTORS = [(14, 15)]
+    
     moto1.speed(index=0, value=0)
     print("motor afremmen")
     utime.sleep_ms(1200)
