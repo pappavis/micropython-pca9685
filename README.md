@@ -36,5 +36,5 @@ Let op!!  met __DC_MOTORS = [(14, 15)] stel jy jouw poorten in as array.
 Sien ook die examples/ map vir meer voorbeelde.
 
 # Credits
-Oorpsornklike lib deur Adafruit.
+Oorspronklike lib deur Adafruit.
 Aangepasd deur Michiel Erasmus.
