@@ -33,7 +33,7 @@ def main():
         
         print("Snelheid van 0 tot 256")
         maxPWM1 = 4096
-        startPerVerh1 = 33 # motor berignt pas by 35% = 1433pwm te draaien.
+        startPerVerh1 = 33 # motor berignt pas by 34% = 1433pwm te draaien.
         tel1 = 1
         verhLijst1 = {}
         
