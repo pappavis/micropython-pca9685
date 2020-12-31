@@ -24,6 +24,7 @@ MicroPython v1.13-178-g21c293fbc on 2020-11-16; ESP32 module with ESP32
 
 Type "help()" for more information.
 >>> from pca9685.pca9685 import PCA9685
+>>> import machine
 >>> i2c1 = machine.SoftI2C(scl=machine.Pin(22),sda=machine.Pin(21),freq=100000)
 >>> moto1 = DCMotors(i2c=i2c1, address=0x40)
 >>> moto1.__DC_MOTORS = [(14, 15), (8, 9)]
